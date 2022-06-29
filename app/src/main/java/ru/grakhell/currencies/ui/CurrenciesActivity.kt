@@ -3,6 +3,8 @@ package ru.grakhell.currencies.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material.BottomAppBar
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -15,10 +17,17 @@ class CurrenciesActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CurrenciesTheme {
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
+                AppContent()
             }
+        }
+    }
+}
+
+@Composable
+fun AppContent() {
+    Column {
+        Surface(color = MaterialTheme.colors.background) {
+            Greeting("Android")
         }
     }
 }
@@ -32,6 +41,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     CurrenciesTheme {
-        Greeting("Android")
+        AppContent()
     }
 }

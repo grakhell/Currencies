@@ -6,5 +6,5 @@ import ru.grakhell.currencies.domain.model.DataFlow
 import java.util.*
 
 interface ExRatesRepository {
-    fun getExRates(currency: Currency, date: Date?): Flow<DataFlow>
+    suspend fun getExRates(currency: Currency, date: Date?): DataFlow
 }

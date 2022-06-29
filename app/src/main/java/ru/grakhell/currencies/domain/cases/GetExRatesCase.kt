@@ -13,5 +13,5 @@ interface GetExRatesCase {
      * актуальные курсы на текущее число
      * @return В случае успеха возвращает DataFlow.ExRatesSuccess, иначе DataFlow.Exception или DataFlow.Failure
      */
-    fun getExRatesForDay(currency: Currency, date: Date?):Flow<DataFlow>
+    suspend fun getExRatesForDay(currency: Currency, date: Date?):DataFlow
 }

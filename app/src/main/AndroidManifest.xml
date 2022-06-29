@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".CurrencyApplication"
         android:theme="@style/Theme.Currencies">
         <activity
-            android:name=".CurrenciesActivity"
+            android:name=".ui.CurrenciesActivity"
             android:exported="true"
             android:label="@string/title_activity_currencies"
             android:theme="@style/Theme.Currencies.NoActionBar">
