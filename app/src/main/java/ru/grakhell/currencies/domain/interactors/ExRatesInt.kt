@@ -8,7 +8,7 @@ import ru.grakhell.currencies.domain.model.DataFlow
 import java.util.*
 
 class ExRatesInt(private val repository: ExRatesRepository):GetExRatesCase {
-    override fun getExRatesForDay(currency: Currency, date: Date?): Flow<DataFlow> {
+    override suspend fun getExRatesForDay(currency: Currency, date: Date?): DataFlow {
         return repository.getExRates(currency, date)
     }
 }

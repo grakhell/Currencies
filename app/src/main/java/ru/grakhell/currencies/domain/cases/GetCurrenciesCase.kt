@@ -9,5 +9,5 @@ interface GetCurrenciesCase {
      * Запрашивает список доступных валют
      * @return В случае успеха возвращает DataFlow.CurrenciesSuccess, иначе DataFlow.Exception или DataFlow.Failure
      */
-    fun getCurrenciesList():Flow<DataFlow>
+    suspend fun getCurrenciesList():DataFlow
 }

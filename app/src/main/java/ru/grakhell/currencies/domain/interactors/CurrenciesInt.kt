@@ -6,7 +6,7 @@ import ru.grakhell.currencies.domain.dai.CurrenciesRepository
 import ru.grakhell.currencies.domain.model.DataFlow
 
 class CurrenciesInt(private val repository: CurrenciesRepository):GetCurrenciesCase {
-    override fun getCurrenciesList(): Flow<DataFlow> {
+    override suspend fun getCurrenciesList(): DataFlow {
         return repository.getCurrencies()
     }
 }
