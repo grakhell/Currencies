@@ -7,10 +7,6 @@ data class ExRateObject(
     val currencyIndex:String,
     val rate:Double
 ) {
-    fun transformToModel():ExRate {
-        val c = Currency(currencyIndex, "")
-        return ExRate(c,  rate)
-    }
 
     companion object  {
         @JvmStatic

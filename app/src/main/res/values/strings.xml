@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Currencies</string>
     <string name="title_activity_currencies">CurrenciesActivity</string>
-    <string name="currencies_screen_title">Currencies</string>
+    <string name="currencies_screen_title">Валюты</string>
+    <string name="rates_screen_title">Обменные курсы для %1$s на %2$s </string>
+    <string name="rates_today">сегодня</string>
+    <string name="action_back">Назад</string>
+    <string name="currencies_screen_snackbar">Ошибка получения данных</string>
 </resources>

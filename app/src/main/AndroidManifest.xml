@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.grakhell.currencies">
 
+    <uses-permission android:name="android.permission.INTERNET"
+        android:maxSdkVersion="22"/>
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

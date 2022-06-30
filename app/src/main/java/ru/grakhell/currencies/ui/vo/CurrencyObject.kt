@@ -10,7 +10,8 @@ data class CurrencyObject(
     fun transformToModel(): Currency {
         return Currency( index, name )
     }
-    companion object {
+
+    companion object{
         @JvmStatic
         fun transformFromModel(model:Currency):CurrencyObject {
             return CurrencyObject(model.index, model.name)
